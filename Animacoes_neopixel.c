@@ -313,6 +313,16 @@ void foguinho(){
     npClear();
 
 }
+//função para uma animação de loading
+void loading_animation() {
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            set_led(i, j, 1);
+            sleep_ms(100);
+            set_led(i, j, 0);
+        }
+    }
+}
 //função principal
 int main() {
 
@@ -366,6 +376,13 @@ int main() {
                 foguinho();
                 seconds++;
             }
+        }
+
+        if (caracter=press == '7')`{
+            tempo_loading = 0;
+            while (tempo_loading != 5){
+                loading_animation();
+                tempo_loading++;
         }
         busy_wait_us(500000);
     }
