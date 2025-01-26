@@ -360,13 +360,13 @@ int main() {
         }
         
         if (caracter_press == '5'){
-
-        uint seconds = 0;
-        while (seconds != 8){
-            foguinho();
-            seconds++;
+    
+            uint seconds = 0;
+            while (seconds != 8){
+                foguinho();
+                seconds++;
+            }
         }
         busy_wait_us(500000);
     }
-}
 }
