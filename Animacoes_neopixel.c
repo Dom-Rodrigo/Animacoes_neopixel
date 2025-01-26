@@ -130,6 +130,9 @@ int main() {
         {
             gpio_put(GPIO_LED,false);
         }
+        if (caracter_press == '*'){
+            rom_reset_usb_boot(0, 0);
+        }
         busy_wait_us(500000);
     }
 }
