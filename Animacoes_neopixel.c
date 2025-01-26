@@ -13,6 +13,18 @@
 #define LED_COUNT 25
 #define LED_PIN 7
 
+//define os pinos do teclado com as portas GPIO
+uint columns[4] = {4, 3, 2, 1}; 
+uint rows[4] = {8, 7, 6, 5};
+
+//mapa de teclas
+char KEY_MAP[16] = {
+    '1', '2' , '3', 'A',
+    '4', '5' , '6', 'B',
+    '7', '8' , '9', 'C',
+    '*', '0' , '#', 'D'
+};
+
 // Definição de pixel GRB
 struct pixel_t {
   uint8_t G, R, B; // Três valores de 8-bits compõem um pixel.
@@ -84,17 +96,7 @@ void npWrite() {
   sleep_us(100); // Espera 100us, sinal de RESET do datasheet.
 }
 
-//define os pinos do teclado com as portas GPIO
-uint columns[4] = {4, 3, 2, 1}; 
-uint rows[4] = {8, 7, 6, 5};
 
-//mapa de teclas
-char KEY_MAP[16] = {
-    '1', '2' , '3', 'A',
-    '4', '5' , '6', 'B',
-    '7', '8' , '9', 'C',
-    '*', '0' , '#', 'D'
-};
 
 uint _columns[4];
 uint _rows[4];
@@ -212,11 +214,18 @@ int main() {
         //Avaliação de caractere para o LED
         if (caracter_press=='B')
         {
-            gpio_put(GPIO_LED,true);
-        }else
-        {
-            gpio_put(GPIO_LED,false);
+            for (uint i=0; i < LED_COUNT; i++){
+                npSetLED(i, 0, 0, 255);
+                sleep_ms(200);
+                npWrite();
+            }
         }
+
+        if (caracter_press=='A'){
+            npClear();
+            npWrite();
+        }
+        
         if (caracter_press == '*'){
             rom_reset_usb_boot(0, 0);
         }
