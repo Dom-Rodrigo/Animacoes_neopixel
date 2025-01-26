@@ -59,6 +59,8 @@ target_include_directories(Animacoes_neopixel PRIVATE
 # Add any user requested libraries
 target_link_libraries(Animacoes_neopixel 
         hardware_pio
+        hardware_timer
+        hardware_clocks
         )
 
 pico_add_extra_outputs(Animacoes_neopixel)
