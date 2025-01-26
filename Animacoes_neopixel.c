@@ -190,6 +190,43 @@ char pico_keypad_get_key(void) {
     }
 }
 
+// Mapeamento da matriz (5x5)
+int getIndex(int x, int y) {
+    return (y % 2 == 0) ? y * 5 + x : y * 5 + (4 - x);
+}
+
+// Animação do coração
+void heartAnimation() {
+
+    int corazon[][2] = {
+        {2, 0},  // Base do coração
+        {1, 1}, {3, 1},  // Meio inferior
+        {0, 2}, {4, 2},  // Laterais
+        {0, 3}, {2, 3}, {4, 3},  // Meio superior
+        {1, 4}, {3, 4}  // Topo
+    };
+    
+    // Coração aparecendo
+    for (int i = 0; i < 10; i++) {
+        int idx = getIndex(corazon[i][0], corazon[i][1]);
+        npSetLED(idx, 10, 0, 0); // Cor vermelha
+        npWrite();
+        sleep_ms(100);
+    }
+
+    sleep_ms(500); // Mantém o coração aceso por um tempo
+
+
+    // Apaga o coração gradualmente
+    for (int i = 9; i >= 0; i--) {
+        int idx = getIndex(corazon[i][0], corazon[i][1]);
+        npSetLED(idx, 0, 0, 0);
+        npWrite();
+        sleep_ms(100);
+    }
+}
+
+
 //função principal
 int main() {
 
@@ -229,6 +266,14 @@ int main() {
         if (caracter_press == '*'){
             rom_reset_usb_boot(0, 0);
         }
+
+                
+        if (caracter_press == '2'){
+
+            heartAnimation();
+            
+        }
+        
         busy_wait_us(500000);
     }
 }
