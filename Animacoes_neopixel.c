@@ -13,7 +13,6 @@
 #define LED_COUNT 25
 #define LED_PIN 7
 
-//define os pinos do teclado com as portas GPIO
 uint columns[4] = {4, 3, 2, 1}; 
 uint rows[4] = {8, 7, 6, 5};
 
@@ -95,7 +94,6 @@ void npWrite() {
   }
   sleep_us(100); // Espera 100us, sinal de RESET do datasheet.
 }
-
 
 
 uint _columns[4];
@@ -226,7 +224,95 @@ void heartAnimation() {
     }
 }
 
+// Animação de fogo
+void foguinho(){
+    npSetLED(4, 50, 0, 0);
+    npSetLED(6, 50, 0, 0);
+    npSetLED(12, 50, 0, 0);
+    npSetLED(8, 50, 0, 0);
+    npSetLED(0, 50, 0, 0);
+    npSetLED(3, 50, 50, 0);
+    npSetLED(7, 50, 50, 0);
+    npSetLED(1, 50, 50, 0);
+    npSetLED(2, 50, 50, 50);
 
+    npWrite();
+    sleep_ms(100);
+
+    npSetLED(9, 50, 0, 0);
+    npSetLED(11, 50, 0, 0);
+    npSetLED(18, 50, 0, 0);
+
+    npWrite();
+    sleep_ms(100);
+
+    npSetLED(8, 50, 50, 50);
+    npSetLED(11, 50, 50, 0);
+    npSetLED(10, 50, 0, 0);
+    npSetLED(15, 50, 0, 0);
+    npSetLED(22, 50, 0, 0);
+    npSetLED(21, 50, 0, 0);
+
+    npWrite();
+    sleep_ms(100);
+
+    npSetLED(9, 0, 0, 0);
+    npSetLED(10, 0, 0, 0);
+    npSetLED(21, 0, 0, 0);
+    npSetLED(15, 0, 0, 0);
+    npSetLED(14, 50, 0, 0);
+    npSetLED(5, 50, 0, 0);
+    npSetLED(4, 50, 50, 0);
+    npSetLED(6, 50, 50, 0);
+    npSetLED(12, 50, 50, 0);
+    npSetLED(2, 50, 50, 50);
+    npSetLED(5, 50, 0, 0);
+    npSetLED(13, 50, 0, 0);
+    npSetLED(17, 50, 0, 0);
+    npSetLED(3, 50, 50, 50);
+    npSetLED(7, 50, 50, 50);
+    npSetLED(11, 50, 0, 0);
+    npSetLED(18, 50, 0, 0);
+    npSetLED(8, 50, 0, 0);
+    npSetLED(16, 50, 0, 0);
+
+    npWrite();
+    sleep_ms(100);
+
+    npSetLED(4, 50, 0, 0);
+    npSetLED(6, 50, 0, 0);
+    npSetLED(12, 50, 0, 0);
+    npSetLED(23, 50, 0, 0);
+    npSetLED(15, 50, 0, 0);
+    npSetLED(3, 50, 50, 0);
+    npSetLED(7, 50, 50, 0);
+    npSetLED(5, 0, 0, 0);
+    npSetLED(13, 0, 0, 0);
+    npSetLED(17, 0, 0, 0);
+    npSetLED(16, 0, 0, 0);
+    npSetLED(22, 0, 0, 0);
+
+    npWrite();
+    sleep_ms(100);
+
+    npSetLED(18, 0, 0, 0);
+    npSetLED(11, 0, 0, 0);
+    npSetLED(19, 0, 0, 0);
+    npSetLED(1, 50, 0, 0);
+    npSetLED(7, 50, 0, 0);
+    npSetLED(2, 50, 50, 0);
+    npSetLED(6, 50, 50, 0);
+    npSetLED(4, 50, 50, 0);
+    npSetLED(3, 50, 50, 50);
+    npSetLED(5, 50, 0, 0);
+    npSetLED(23, 0, 0, 0);
+    npSetLED(14, 0, 0, 0);
+
+    npWrite();
+    sleep_ms(100);
+    npClear();
+
+}
 //função principal
 int main() {
 
@@ -253,7 +339,7 @@ int main() {
         {
             for (uint i=0; i < LED_COUNT; i++){
                 npSetLED(i, 0, 0, 255);
-                sleep_ms(200);
+                sleep_us(200);
                 npWrite();
             }
         }
@@ -262,11 +348,10 @@ int main() {
             npClear();
             npWrite();
         }
-        
+
         if (caracter_press == '*'){
             rom_reset_usb_boot(0, 0);
         }
-
                 
         if (caracter_press == '2'){
 
@@ -274,6 +359,13 @@ int main() {
             
         }
         
+        if (caracter_press == '5'){
+
+        uint seconds = 0;
+        while (seconds != 8){
+            foguinho();
+            seconds++;
+        }
         busy_wait_us(500000);
     }
 }
