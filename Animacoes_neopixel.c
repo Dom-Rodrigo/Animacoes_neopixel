@@ -347,21 +347,21 @@ void foguinho()
 #include <stdio.h>
 // Supondo que você tenha as funções npSetLED(), npWrite(), npClear() e sleep_ms() disponíveis.
 
-#define ORANGE_R 50
-#define ORANGE_G 25
+#define ORANGE_R 10
+#define ORANGE_G 5
 #define ORANGE_B 0
 
 #define BLUE_R 0
 #define BLUE_G 0
-#define BLUE_B 50
+#define BLUE_B 10
 
-#define YELLOW_R 50
-#define YELLOW_G 50
+#define YELLOW_R 10
+#define YELLOW_G 10
 #define YELLOW_B 0
 
 #define CYAN_R 0
-#define CYAN_G 50
-#define CYAN_B 50
+#define CYAN_G 10
+#define CYAN_B 10
 
 void tetrix()
 {
@@ -372,7 +372,7 @@ void tetrix()
     npSetLED(24 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // (blue / yellow / cyan1 / cyan2 não têm LEDs neste frame)
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 2
     npClear();
@@ -381,7 +381,7 @@ void tetrix()
     npSetLED(16 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npSetLED(17 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 3
     npClear();
@@ -391,7 +391,7 @@ void tetrix()
     npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npSetLED(14 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 4
     npClear();
@@ -401,7 +401,7 @@ void tetrix()
     npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npSetLED(7 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 5
     npClear();
@@ -411,7 +411,7 @@ void tetrix()
     npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 6
     npClear();
@@ -424,7 +424,7 @@ void tetrix()
     npSetLED(23 - 1, BLUE_R, BLUE_G, BLUE_B);
     npSetLED(22 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 7
     npClear();
@@ -438,7 +438,7 @@ void tetrix()
     npSetLED(18 - 1, BLUE_R, BLUE_G, BLUE_B);
     npSetLED(19 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 8
     npClear();
@@ -453,7 +453,7 @@ void tetrix()
     npSetLED(13 - 1, BLUE_R, BLUE_G, BLUE_B);
     npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 9
     npClear();
@@ -468,7 +468,7 @@ void tetrix()
     npSetLED(8 - 1, BLUE_R, BLUE_G, BLUE_B);
     npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 10
     npClear();
@@ -483,7 +483,7 @@ void tetrix()
     npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
     npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 11
     npClear();
@@ -498,7 +498,7 @@ void tetrix()
     npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
     npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 12
     npClear();
@@ -516,7 +516,7 @@ void tetrix()
     npSetLED(24 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npSetLED(23 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 13
     npClear();
@@ -536,7 +536,7 @@ void tetrix()
     npSetLED(17 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npSetLED(18 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 14
     npClear();
@@ -556,7 +556,7 @@ void tetrix()
     npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 15
     npClear();
@@ -576,7 +576,7 @@ void tetrix()
     npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 16
     npClear();
@@ -601,7 +601,7 @@ void tetrix()
     npSetLED(23 - 1, CYAN_R, CYAN_G, CYAN_B);
     npSetLED(22 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 17
     npClear();
@@ -626,7 +626,7 @@ void tetrix()
     npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
     npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 18
     npClear();
@@ -653,7 +653,7 @@ void tetrix()
     // cyan2 (21)
     npSetLED(21 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 19
     npClear();
@@ -681,7 +681,7 @@ void tetrix()
     npSetLED(21 - 1, CYAN_R, CYAN_G, CYAN_B);
     npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 20
     npClear();
@@ -710,7 +710,7 @@ void tetrix()
     npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
     npSetLED(11 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 21
     npClear();
@@ -740,7 +740,7 @@ void tetrix()
     npSetLED(11 - 1, CYAN_R, CYAN_G, CYAN_B);
     npSetLED(10 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 
     // Frame 22
     npClear();
@@ -770,7 +770,7 @@ void tetrix()
     npSetLED(10 - 1, CYAN_R, CYAN_G, CYAN_B);
     npSetLED(1 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(100);
 
     // Frame 23
     npClear();
@@ -795,7 +795,7 @@ void tetrix()
     npSetLED(11 - 1, CYAN_R, CYAN_G, CYAN_B);
     npSetLED(10 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(100);
 
     // Frame 24
     npClear();
@@ -815,7 +815,7 @@ void tetrix()
     npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
     npSetLED(11 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(100);
 
     // Frame 25
     npClear();
@@ -830,7 +830,7 @@ void tetrix()
     // cyan2 (20)
     npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
-    sleep_ms(500);
+    sleep_ms(100);
 
     // Frame 26
     npClear();
@@ -841,7 +841,7 @@ void tetrix()
     // cyan2: (nenhum)
     // aqui, todos desligados ou você pode remover o npClear() se quiser manter algo aceso
     npWrite();
-    sleep_ms(500);
+    sleep_ms(400);
 }
 
 // função principal
@@ -857,15 +857,15 @@ int main()
     npWrite(); // Escreve os dados nos LEDs.
 
     stdio_init_all();
-    // pico_keypad_init(columns, rows, KEY_MAP);
+    // pico_keypad_init(columns, rows, KEY_MAP); //Foi desabilitado pois estava impedindo o funcionamento dos leds da forma correta
     char caracter_press;
     gpio_init(GPIO_LED);
     gpio_set_dir(GPIO_LED, GPIO_OUT);
 
     while (true)
     {
-        // caracter_press = pico_keypad_get_key();
-        caracter_press = '6';
+        // caracter_press = pico_keypad_get_key(); //Foi comentado pois a tecla sempre estava vindo como tecla A, infinitamente
+        caracter_press = '6'; // Tecla 6 foi definida fixa para testar os leds e animação
         printf("\nTecla pressionada: %c\n", caracter_press);
 
         // Avaliação de caractere para o LED
