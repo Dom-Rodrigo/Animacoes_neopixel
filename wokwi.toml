@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/Animacoes_neopixel.uf2'
+elf = 'build/Animacoes_neopixel.elf'
