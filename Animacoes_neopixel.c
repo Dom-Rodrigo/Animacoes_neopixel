@@ -368,8 +368,8 @@ void tetrix()
     // Frame 1
     npClear(); // limpa todos os LEDs do frame anterior
     // orange (25, 24)
-    npSetLED(25, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(24, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(25 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(24 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // (blue / yellow / cyan1 / cyan2 não têm LEDs neste frame)
     npWrite();
     sleep_ms(500);
@@ -377,443 +377,443 @@ void tetrix()
     // Frame 2
     npClear();
     // orange (25, 16, 17)
-    npSetLED(25, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(16, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(17, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(25 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(16 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(17 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 3
     npClear();
     // orange (25, 16, 15, 14)
-    npSetLED(25, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(16, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(14, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(25 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(16 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(14 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 4
     npClear();
     // orange (16, 15, 6, 7)
-    npSetLED(16, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(7, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(16 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(7 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 5
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 6
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (23, 22)
-    npSetLED(23, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(22, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(23 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(22 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 7
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (22, 18, 19)
-    npSetLED(22, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(18, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(19, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(22 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(18 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(19 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 8
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (22, 19, 13, 12)
-    npSetLED(22, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(19, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(13, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(22 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(19 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(13 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 9
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (19, 12, 8, 9)
-    npSetLED(19, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(8, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(19 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(8 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 10
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 11
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 12
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (24, 23)
-    npSetLED(24, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(23, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(24 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(23 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 13
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (24, 23, 17, 18)
-    npSetLED(24, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(23, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(17, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(18, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(24 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(23 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(17 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(18 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 14
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (17, 18, 14, 13)
-    npSetLED(17, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(18, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(17 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(18 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 15
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13, 7, 8)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(7, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(8, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 16
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13, 7, 8)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(7, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(8, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     // cyan1 (25, 24, 23, 22)
-    npSetLED(25, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(24, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(23, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(22, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(25 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(24 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(23 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(22 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 17
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13, 7, 8)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(7, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(8, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     // cyan1 (16, 17, 18, 19)
-    npSetLED(16, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(17, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(18, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(19, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(16 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(17 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 18
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13, 7, 8)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(7, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(8, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     // cyan1 (16, 17, 18, 19)
-    npSetLED(16, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(17, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(18, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(19, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(16 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(17 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     // cyan2 (21)
-    npSetLED(21, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(21 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 19
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13, 7, 8)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(7, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(8, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     // cyan1 (16, 17, 18, 19)
-    npSetLED(16, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(17, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(18, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(19, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(16 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(17 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     // cyan2 (21, 20)
-    npSetLED(21, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(20, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(21 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 20
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13, 7, 8)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(7, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(8, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     // cyan1 (16, 17, 18, 19)
-    npSetLED(16, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(17, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(18, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(19, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(16 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(17 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     // cyan2 (21, 20, 11)
-    npSetLED(21, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(20, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(11, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(21 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(11 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 21
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13, 7, 8)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(7, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(8, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     // cyan1 (16, 17, 18, 19)
-    npSetLED(16, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(17, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(18, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(19, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(16 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(17 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     // cyan2 (21, 20, 11, 10)
-    npSetLED(21, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(20, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(11, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(10, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(21 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(11 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(10 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 22
     npClear();
     // orange (15, 6, 5, 4)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(5, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(4, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(5 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(4 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9, 3, 2)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(3, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(2, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(3 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(2 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13, 7, 8)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(7, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(8, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     // cyan1 (16, 17, 18, 19)
-    npSetLED(16, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(17, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(18, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(19, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(16 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(17 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     // cyan2 (20, 11, 10, 1)
-    npSetLED(20, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(11, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(10, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(11 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(10 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(1 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 23
     npClear();
     // orange (15, 6)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
-    npSetLED(6, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(6 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12, 9)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
-    npSetLED(9, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(9 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13, 7, 8)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(7, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(8, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(7 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(8 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     // cyan1 (16, 17, 18, 19)
-    npSetLED(16, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(17, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(18, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(19, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(16 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(17 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     // cyan2 (20, 11, 10)
-    npSetLED(20, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(11, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(10, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(11 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(10 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
     // Frame 24
     npClear();
     // orange (15)
-    npSetLED(15, ORANGE_R, ORANGE_G, ORANGE_B);
+    npSetLED(15 - 1, ORANGE_R, ORANGE_G, ORANGE_B);
     // blue (12)
-    npSetLED(12, BLUE_R, BLUE_G, BLUE_B);
+    npSetLED(12 - 1, BLUE_R, BLUE_G, BLUE_B);
     // yellow (14, 13)
-    npSetLED(14, YELLOW_R, YELLOW_G, YELLOW_B);
-    npSetLED(13, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(14 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
+    npSetLED(13 - 1, YELLOW_R, YELLOW_G, YELLOW_B);
     // cyan1 (16, 17, 18, 19)
-    npSetLED(16, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(17, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(18, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(19, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(16 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(17 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     // cyan2 (20, 11)
-    npSetLED(20, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(11, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(11 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
@@ -823,12 +823,12 @@ void tetrix()
     // blue: (nenhum)
     // yellow: (nenhum)
     // cyan1 (16, 17, 18, 19)
-    npSetLED(16, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(17, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(18, CYAN_R, CYAN_G, CYAN_B);
-    npSetLED(19, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(16 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(17 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(18 - 1, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(19 - 1, CYAN_R, CYAN_G, CYAN_B);
     // cyan2 (20)
-    npSetLED(20, CYAN_R, CYAN_G, CYAN_B);
+    npSetLED(20 - 1, CYAN_R, CYAN_G, CYAN_B);
     npWrite();
     sleep_ms(500);
 
@@ -857,14 +857,15 @@ int main()
     npWrite(); // Escreve os dados nos LEDs.
 
     stdio_init_all();
-    pico_keypad_init(columns, rows, KEY_MAP);
+    // pico_keypad_init(columns, rows, KEY_MAP);
     char caracter_press;
     gpio_init(GPIO_LED);
     gpio_set_dir(GPIO_LED, GPIO_OUT);
 
     while (true)
     {
-        caracter_press = pico_keypad_get_key();
+        // caracter_press = pico_keypad_get_key();
+        caracter_press = '6';
         printf("\nTecla pressionada: %c\n", caracter_press);
 
         // Avaliação de caractere para o LED
