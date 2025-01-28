@@ -844,11 +844,38 @@ void tetrix()
     sleep_ms(400);
 }
 
+
+// Animação de hélice enquanto pressiona botão 3
+void propeller(uint8_t flip){
+    if(flip % 2 == 0){
+        npSetLED(22, 0, 255, 0);
+        npSetLED(17, 255, 0, 0);
+        npSetLED(12, 0, 255, 0);
+        npSetLED(7, 255, 0, 0);
+        npSetLED(2, 0, 255, 0);
+        npSetLED(14, 0, 255, 0);
+        npSetLED(13, 255, 0, 0);
+        npSetLED(11, 0, 255, 0);
+        npSetLED(10, 255, 0, 0);
+    } else {
+        npSetLED(24, 0, 255, 0);
+        npSetLED(16, 255, 0, 0);
+        npSetLED(12, 0, 255, 0);
+        npSetLED(8, 255, 0, 0);
+        npSetLED(0, 0, 255, 0);
+        npSetLED(4, 0, 255, 0);
+        npSetLED(6, 255, 0, 0);
+        npSetLED(18, 255, 0, 0);
+        npSetLED(20, 0, 255, 0);
+    }
+    npWrite();
+    
+}
+
 // função principal
 int main()
 {
-
-    // Inicializa matriz de LEDs NeoPixel.
+    uint8_t flipflop = 1;
     npInit(LED_PIN);
     npClear();
 
@@ -907,10 +934,21 @@ int main()
             }
         }
 
+        if (caracter_press == '3'){
+            npClear();
+
+            propeller(flipflop);
+            npWrite();
+
+            flipflop++;
+        }
+
+
         if (caracter_press == '6')
         {
             tetrix();
         }
+
         busy_wait_us(500000);
     }
 }
