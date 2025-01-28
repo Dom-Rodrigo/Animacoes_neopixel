@@ -15,6 +15,8 @@
 
 uint columns[4] = {4, 3, 2, 1};
 uint rows[4] = {8, 7, 6, 5};
+// uint columns[4] = {16, 17, 18, 19}; // Pinos corretos para a BitDogLab
+// uint rows[4] = {0, 1, 2, 3};
 
 // mapa de teclas
 char KEY_MAP[16] = {
@@ -857,15 +859,15 @@ int main()
     npWrite(); // Escreve os dados nos LEDs.
 
     stdio_init_all();
-    // pico_keypad_init(columns, rows, KEY_MAP); //Foi desabilitado pois estava impedindo o funcionamento dos leds da forma correta
+    pico_keypad_init(columns, rows, KEY_MAP); //Foi desabilitado pois estava impedindo o funcionamento dos leds da forma correta
     char caracter_press;
     gpio_init(GPIO_LED);
     gpio_set_dir(GPIO_LED, GPIO_OUT);
 
     while (true)
     {
-        // caracter_press = pico_keypad_get_key(); //Foi comentado pois a tecla sempre estava vindo como tecla A, infinitamente
-        caracter_press = '6'; // Tecla 6 foi definida fixa para testar os leds e animação
+        caracter_press = pico_keypad_get_key(); //Foi comentado pois a tecla sempre estava vindo como tecla A, infinitamente
+        // caracter_press = '6'; // Tecla 6 foi definida fixa para testar os leds e animação
         printf("\nTecla pressionada: %c\n", caracter_press);
 
         // Avaliação de caractere para o LED
