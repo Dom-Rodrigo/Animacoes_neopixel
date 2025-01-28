@@ -914,3 +914,79 @@ int main()
         busy_wait_us(500000);
     }
 }
+
+//função que exibe um letreiro com a mensagem EMBARCATECH
+typedef struct {
+    uint8_t r;
+    uint8_t g;
+    uint8_t b;
+} RGB;
+
+const uint8_t font5x5[13][5] = {
+    {0b11110, 0b10001, 0b11110, 0b10001, 0b10001}, // E
+    {0b11110, 0b10001, 0b11110, 0b10001, 0b11110}, // M
+    {0b11110, 0b10001, 0b10001, 0b10001, 0b10001}, // B
+    {0b11110, 0b10001, 0b11110, 0b10001, 0b11110}, // A
+    {0b10001, 0b10001, 0b11110, 0b10001, 0b10001}, // R
+    {0b11110, 0b10000, 0b11110, 0b10001, 0b11110}, // C
+    {0b11110, 0b10001, 0b10001, 0b10001, 0b11110}, // A
+    {0b11110, 0b10001, 0b10001, 0b10001, 0b10001}, // T
+    {0b10001, 0b10001, 0b10001, 0b10001, 0b11110}, // E
+    {0b11110, 0b10001, 0b11110, 0b10001, 0b11110}, // C
+    {0b11110, 0b10001, 0b10001, 0b10001, 0b10001}, // H
+};
+
+void set_pixel_color(PIO pio, uint sm, uint32_t color) {
+    pio_sm_put_blocking(pio, sm, color << 8u);
+}
+
+void clear_matrix(PIO pio, uint sm) {
+    for (int i = 0; i < NUM_LEDS; i++) {
+        set_pixel_color(pio, sm, 0);
+    }
+}
+
+void display_character(PIO pio, uint sm, char c, RGB color) {
+    if (c >= 'A' && c <= 'Z') {
+        int index = c - 'A';
+        for (int row = 0; row < 5; row++) {
+            uint8_t rowData = font5x5[index][row];
+            for (int col = 0; col < 5; col++) {
+                if (rowData & (1 << (4 - col))) {
+                    uint32_t pixelColor = ((uint32_t)(color.g * BRIGHTNESS) << 16) |
+                                          ((uint32_t)(color.r * BRIGHTNESS) << 8) |
+                                          (uint32_t)(color.b * BRIGHTNESS);
+                    set_pixel_color(pio, sm, pixelColor);
+                } else {
+                    set_pixel_color(pio, sm, 0);
+                }
+            }
+        }
+    }
+}
+
+int main() {
+    stdio_init_all();
+
+    PIO pio = pio0;
+    uint sm = 0;
+    uint offset = pio_add_program(pio, &ws2812_program);
+    ws2812_program_init(pio, sm, offset, LED_PIN, 800000, false);
+
+    RGB color = {255, 0, 0}; // Vermelho
+
+    const char* message = "EMBARCATECH";
+
+    while (true) {
+        const char* ptr = message;
+        while (*ptr) {
+            clear_matrix(pio, sm);
+            display_character(pio, sm, *ptr, color);
+            sleep_ms(500);
+            ptr++;
+        }
+        sleep_ms(1000);
+    }
+
+    return 0;
+}
