@@ -7,16 +7,14 @@
 #include "pico/bootrom.h"
 
 // define o LED de saída
-#define GPIO_LED 18
+#define GPIO_LED 13
 
 // Definição do número de LEDs e pino.
 #define LED_COUNT 25
 #define LED_PIN 7
 
-uint columns[4] = {4, 3, 2, 1};
-uint rows[4] = {8, 7, 6, 5};
-// uint columns[4] = {16, 17, 18, 19}; // Pinos corretos para a BitDogLab
-// uint rows[4] = {0, 1, 2, 3};
+uint columns[4] = {16, 17, 18, 19}; // Pinos corretos para a BitDogLab
+uint rows[4] = {0, 1, 2, 3};
 
 // mapa de teclas
 char KEY_MAP[16] = {
