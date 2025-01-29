@@ -869,86 +869,22 @@ void propeller(uint8_t flip){
     
 }
 void letreiro(){
-            npSetLED(0, 50, 50, 50); 
-            npSetLED(1, 50, 0, 0);
-            npSetLED(2, 50, 50, 50);
-            npSetLED(3, 50, 0, 0);
-            npSetLED(4, 50, 50, 50); 
-
-    npwrite()
-        sleep_ms(100)
-        
-            npSetLED(0, 50, 50, 50); 
-            npSetLED(1, 50, 0, 0); 
-            npSetLED(2, 50, 50, 50); 
-            npSetLED(3, 50, 0, 0); 
-            npSetLED(4, 50, 50, 50);
-
-     npwrite()
-        sleep_ms(100)
-         
-            npSetLED(0, 50, 50, 50); 
-            npSetLED(1, 50, 0, 0); 
-            npSetLED(2, 50, 50, 50); 
-            npSetLED(3, 50, 0, 0); 
-            npSetLED(4, 50, 50, 50);
-     
-    npwrite()
-        sleep_ms(100)
-        
-            npSetLED(0, 50, 50, 50);
-            npSetLED(1, 50, 0, 0); 
-            npSetLED(2, 50, 50, 50); 
-            npSetLED(3, 50, 0, 0); 
-            npSetLED(4, 50, 50, 50);
-
-     npwrite()
-        sleep_ms(100)
-         
-            npSetLED(0, 50, 50, 50);
-            npSetLED(1, 50, 0, 0); 
-            npSetLED(2, 50, 50, 50); 
-            npSetLED(3, 50, 0, 0); 
-            npSetLED(4, 50, 50, 50);
-
-     npwrite()
-        sleep_ms(100)
-         
-            npSetLED(0, 50, 50, 50); 
-            npSetLED(1, 50, 0, 0); 
-            npSetLED(2, 50, 50, 50); 
-            npSetLED(3, 50, 0, 0); 
-            npSetLED(4, 50, 50, 50);
-     npwrite()
-        sleep_ms(100)
-         
-            npSetLED(0, 50, 50, 50); 
-            npSetLED(1, 50, 0, 0); 
-            npSetLED(2, 50, 50, 50); 
-            npSetLED(3, 50, 0, 0); 
-            npSetLED(4, 50, 50, 50); 
-
-     npwrite()
-        sleep_ms(100)
-         
-            npSetLED(0, 50, 50, 50); 
-            npSetLED(1, 50, 0, 0); 
-            npSetLED(2, 50, 50, 50); 
-            npSetLED(3, 50, 0, 0); 
-            npSetLED(4, 50, 50, 50); 
-
-     npwrite()
-        sleep_ms(100)
-         
-            npSetLED(0, 50, 50, 50); 
-            npSetLED(1, 50, 0, 0); 
-            npSetLED(2, 50, 50, 50); 
-            npSetLED(3, 50, 0, 0); 
-            npSetLED(4, 50, 50, 50); 
-    npwrite()
-        sleep_ms(10000)
-    }
-}   npClear();  // Limpa os LEDs após a exibição
+    npSetLED(0, 50, 50, 50); 
+    npWrite();
+    sleep_ms(200);
+    npSetLED(1, 50, 0, 0);
+    npWrite();
+    sleep_ms(200);
+    npSetLED(2, 50, 50, 50);
+    npWrite();
+    sleep_ms(200);
+    npSetLED(3, 50, 0, 0);
+    npWrite();
+    sleep_ms(200);
+    npSetLED(4, 50, 50, 50); 
+    npWrite();
+    sleep_ms(200);
+    npClear();
 }
 // função principal
 int main()
@@ -1054,12 +990,16 @@ int main()
             tetrix();
         }
 
-        busy_wait_us(500000);
-
         if (caracter_press == '9') 
         {
-            letreiro()
+            
+            uint s = 0;
+            while (s != 3)
+            {
+                letreiro();
+                s++;
+            }
         }
-         busy_wait_us(1000000); 
+        busy_wait_us(500000);
     }
 }
