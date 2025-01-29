@@ -344,9 +344,6 @@ void foguinho()
     npClear();
 }
 
-#include <stdio.h>
-// Supondo que você tenha as funções npSetLED(), npWrite(), npClear() e sleep_ms() disponíveis.
-
 #define ORANGE_R 10
 #define ORANGE_G 5
 #define ORANGE_B 0
@@ -901,6 +898,33 @@ int main()
             for (uint i = 0; i < LED_COUNT; i++)
             {
                 npSetLED(i, 0, 0, 255);
+                sleep_us(200);
+                npWrite();
+            }
+        }
+        if (caracter_press == 'C')
+        {
+            for (uint i = 0; i < LED_COUNT; i++)
+            {
+                npSetLED(i, 255*0.8, 0, 0);
+                sleep_us(200);
+                npWrite();
+            }
+        }
+        if (caracter_press == 'D')
+        {
+            for (uint i = 0; i < LED_COUNT; i++)
+            {
+                npSetLED(i, 0, 255*0.5, 0);
+                sleep_us(200);
+                npWrite();
+            }
+        }
+        if (caracter_press == '#')
+        {
+            for (uint i = 0; i < LED_COUNT; i++)
+            {
+                npSetLED(i, 255*0.2, 255*0.2, 255*0.2);
                 sleep_us(200);
                 npWrite();
             }
