@@ -23,6 +23,12 @@ char KEY_MAP[16] = {
     '7', '8', '9', 'C',
     '*', '0', '#', 'D'};
 
+// char KEY_MAP[16] = {
+//     'B', '6', '5', '4',
+//     'A', '3', '2', '1',
+//     'C', '9', '8', '7',
+//     'B', '#', '0', '*'};
+
 // Definição de pixel GRB
 struct pixel_t
 {
@@ -868,10 +874,10 @@ void animacao_loading(){
     npSetLED(24, 50, 0, 0);
     npWrite();
     sleep_ms(100);
-    npSetLED(24, 50, 0, 0);
+    npSetLED(23, 50, 0, 0);
     npWrite();
     sleep_ms(100);
-    npSetLED(22, 50, 1, 0);
+    npSetLED(22, 50, 0, 0);
     npWrite();
     sleep_ms(100);
     npSetLED(21, 50, 0, 0);
@@ -915,7 +921,9 @@ void animacao_loading(){
     sleep_ms(100);
     npSetLED(12, 50, 0, 0);
     npWrite();
-    sleep_ms(100);
+    sleep_ms(200);
+    npClear();
+    npWrite();
 
     };
 
@@ -1053,13 +1061,8 @@ int main()
         }
 
         if (caracter_press == '7'){
-    
-            uint seconds = 0;
-            while (seconds <= 8){
-                animacao_loading();
-                seconds++;
-            }
-            npClear();
+
+            animacao_loading();
         }
 
         if (caracter_press == '3'){
