@@ -868,7 +868,24 @@ void propeller(uint8_t flip){
     npWrite();
     
 }
-
+void letreiro(){
+    npSetLED(0, 50, 50, 50); 
+    npWrite();
+    sleep_ms(200);
+    npSetLED(1, 50, 0, 0);
+    npWrite();
+    sleep_ms(200);
+    npSetLED(2, 50, 50, 50);
+    npWrite();
+    sleep_ms(200);
+    npSetLED(3, 50, 0, 0);
+    npWrite();
+    sleep_ms(200);
+    npSetLED(4, 50, 50, 50); 
+    npWrite();
+    sleep_ms(200);
+    npClear();
+}
 // função principal
 int main()
 {
@@ -973,6 +990,16 @@ int main()
             tetrix();
         }
 
+        if (caracter_press == '9') 
+        {
+            
+            uint s = 0;
+            while (s != 3)
+            {
+                letreiro();
+                s++;
+            }
+        }
         busy_wait_us(500000);
     }
 }
