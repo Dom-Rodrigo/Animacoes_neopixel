@@ -840,7 +840,84 @@ void tetrix()
     npWrite();
     sleep_ms(400);
 }
+void animacao_loading(){
+    npSetLED(0, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(1, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(2, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(3, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(4, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(5, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(14, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(15, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(24, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(24, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(22, 50, 1, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(21, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(20, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(19, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(10, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(9, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(8, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(7, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(6, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(13, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(16, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(17, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(18, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(11, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
+    npSetLED(12, 50, 0, 0);
+    npWrite();
+    sleep_ms(100);
 
+    };
 
 // Animação de hélice enquanto pressiona botão 3
 void propeller(uint8_t flip){
@@ -974,6 +1051,15 @@ int main()
                 seconds++;
             }
         }
+
+        if (caracter_press == '7'){
+    
+            uint seconds = 0;
+            while (seconds <= 8){
+                animacao_loading();
+                seconds++;
+            }
+            npclear();
 
         if (caracter_press == '3'){
             npClear();
