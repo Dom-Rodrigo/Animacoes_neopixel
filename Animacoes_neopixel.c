@@ -1059,7 +1059,8 @@ int main()
                 animacao_loading();
                 seconds++;
             }
-            npclear();
+            npClear();
+        }
 
         if (caracter_press == '3'){
             npClear();
