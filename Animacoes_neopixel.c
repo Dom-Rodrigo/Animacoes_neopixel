@@ -868,7 +868,88 @@ void propeller(uint8_t flip){
     npWrite();
     
 }
+void letreiro(){
+            npSetLED(0, 50, 50, 50); 
+            npSetLED(1, 50, 0, 0);
+            npSetLED(2, 50, 50, 50);
+            npSetLED(3, 50, 0, 0);
+            npSetLED(4, 50, 50, 50); 
 
+    npwrite()
+        sleep_ms(100)
+        
+            npSetLED(0, 50, 50, 50); 
+            npSetLED(1, 50, 0, 0); 
+            npSetLED(2, 50, 50, 50); 
+            npSetLED(3, 50, 0, 0); 
+            npSetLED(4, 50, 50, 50);
+
+     npwrite()
+        sleep_ms(100)
+         
+            npSetLED(0, 50, 50, 50); 
+            npSetLED(1, 50, 0, 0); 
+            npSetLED(2, 50, 50, 50); 
+            npSetLED(3, 50, 0, 0); 
+            npSetLED(4, 50, 50, 50);
+     
+    npwrite()
+        sleep_ms(100)
+        
+            npSetLED(0, 50, 50, 50);
+            npSetLED(1, 50, 0, 0); 
+            npSetLED(2, 50, 50, 50); 
+            npSetLED(3, 50, 0, 0); 
+            npSetLED(4, 50, 50, 50);
+
+     npwrite()
+        sleep_ms(100)
+         
+            npSetLED(0, 50, 50, 50);
+            npSetLED(1, 50, 0, 0); 
+            npSetLED(2, 50, 50, 50); 
+            npSetLED(3, 50, 0, 0); 
+            npSetLED(4, 50, 50, 50);
+
+     npwrite()
+        sleep_ms(100)
+         
+            npSetLED(0, 50, 50, 50); 
+            npSetLED(1, 50, 0, 0); 
+            npSetLED(2, 50, 50, 50); 
+            npSetLED(3, 50, 0, 0); 
+            npSetLED(4, 50, 50, 50);
+     npwrite()
+        sleep_ms(100)
+         
+            npSetLED(0, 50, 50, 50); 
+            npSetLED(1, 50, 0, 0); 
+            npSetLED(2, 50, 50, 50); 
+            npSetLED(3, 50, 0, 0); 
+            npSetLED(4, 50, 50, 50); 
+
+     npwrite()
+        sleep_ms(100)
+         
+            npSetLED(0, 50, 50, 50); 
+            npSetLED(1, 50, 0, 0); 
+            npSetLED(2, 50, 50, 50); 
+            npSetLED(3, 50, 0, 0); 
+            npSetLED(4, 50, 50, 50); 
+
+     npwrite()
+        sleep_ms(100)
+         
+            npSetLED(0, 50, 50, 50); 
+            npSetLED(1, 50, 0, 0); 
+            npSetLED(2, 50, 50, 50); 
+            npSetLED(3, 50, 0, 0); 
+            npSetLED(4, 50, 50, 50); 
+    npwrite()
+        sleep_ms(10000)
+    }
+}   npClear();  // Limpa os LEDs após a exibição
+}
 // função principal
 int main()
 {
@@ -974,5 +1055,11 @@ int main()
         }
 
         busy_wait_us(500000);
+
+        if (caracter_press == '9') 
+        {
+            letreiro()
+        }
+         busy_wait_us(1000000); 
     }
 }
